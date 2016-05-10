@@ -3,7 +3,8 @@
   "features" : [ {
     "type" : "Feature",
     "id" : 1686359,
-    "timestamp" : "2016-05-08 23:09:02+02",
+    "MyData" :
+ {    "population" : 645300    },    "timestamp" : "2016-05-08 23:09:02+02",
     "rpath" : [ "1686359", "51701", "0" ],
     "properties" : {
       "id" : 1686359,
@@ -46,7 +47,8 @@
 {
     "type" : "Feature",
     "id" : 1686649,
-    "timestamp" : "2016-05-08 23:09:02+02",
+    "MyData" :
+ {    "population" : 54100    },    "timestamp" : "2016-05-08 23:09:02+02",
     "rpath" : [ "1686649", "51701", "0" ],
     "properties" : {
       "id" : 1686649,
@@ -86,7 +88,8 @@
 
 {
     "type" : "Feature",
-    "id" : 1686666,
+    "id" : 1686666,    "MyData" :
+ {    "population" : 15900    },
     "timestamp" : "2016-05-08 23:09:02+02",
     "rpath" : [ "1686666", "51701", "0" ],
     "properties" : {
@@ -134,7 +137,8 @@
 {
     "type" : "Feature",
     "id" : 1699639,
-    "timestamp" : "2016-05-08 23:09:02+02",
+    "MyData" :
+ {    "population" : 185227    },    "timestamp" : "2016-05-08 23:09:02+02",
     "rpath" : [ "1699639", "51701", "0" ],
     "properties" : {
       "id" : 1699639,
@@ -177,7 +181,8 @@
 
 {
     "type" : "Feature",
-    "id" : 1686366,
+    "id" : 1686366,    "MyData" :
+ {    "population" : 261400    },
     "timestamp" : "2016-05-08 23:09:02+02",
     "rpath" : [ "1686366", "51701", "0" ],
     "properties" : {
@@ -220,7 +225,8 @@
 {
     "type" : "Feature",
     "id" : 1686344,
-    "timestamp" : "2016-05-08 23:09:02+02",
+    "MyData" :
+ {    "population" : 974235    },    "timestamp" : "2016-05-08 23:09:02+02",
     "rpath" : [ "1686344", "51701", "0" ],
     "properties" : {
       "id" : 1686344,
@@ -330,7 +336,8 @@
 {
     "type" : "Feature",
     "id" : 1698314,
-    "timestamp" : "2016-05-08 23:09:02+02",
+    "MyData" :
+ {    "population" : 251308    },    "timestamp" : "2016-05-08 23:09:02+02",
     "rpath" : [ "1698314", "51701", "0" ],
     "properties" : {
       "id" : 1698314,
@@ -381,7 +388,8 @@
 {
     "type" : "Feature",
     "id" : 1702419,
-    "timestamp" : "2016-05-08 23:09:02+02",
+    "MyData" :
+ {    "population" : 441000    },    "timestamp" : "2016-05-08 23:09:02+02",
     "rpath" : [ "1702419", "51701", "0" ],
     "properties" : {
       "id" : 1702419,
@@ -460,7 +468,8 @@
 
 {
     "type" : "Feature",
-    "id" : 1685673,
+    "id" : 1685673,    "MyData" :
+ {    "population" : 39369    },
     "timestamp" : "2016-05-08 23:09:02+02",
     "rpath" : [ "1685673", "51701", "0" ],
     "properties" : {
@@ -500,7 +509,8 @@
 
 {
     "type" : "Feature",
-    "id" : 1686631,
+    "id" : 1686631,    "MyData" :
+ {    "population" : 187812    },
     "timestamp" : "2016-05-08 23:09:02+02",
     "rpath" : [ "1686631", "51701", "0" ],
     "properties" : {
@@ -544,7 +554,8 @@
 {
     "type" : "Feature",
     "id" : 1697347,
-    "timestamp" : "2016-05-08 23:09:02+02",
+    "MyData" :
+ {    "population" : 69100    },    "timestamp" : "2016-05-08 23:09:02+02",
     "rpath" : [ "1697347", "51701", "0" ],
     "properties" : {
       "id" : 1697347,
@@ -584,7 +595,8 @@
 
 {
     "type" : "Feature",
-    "id" : 1685677,
+    "id" : 1685677,    "MyData" :
+ {    "population" : 354662    },
     "timestamp" : "2016-05-08 23:09:02+02",
     "rpath" : [ "1685677", "51701", "0" ],
     "properties" : {
@@ -624,7 +636,8 @@
 
 {
     "type" : "Feature",
-    "id" : 1702420,
+    "id" : 1702420,    "MyData" :
+ {    "population" : 167500    },
     "timestamp" : "2016-05-08 23:09:02+02",
     "rpath" : [ "1702420", "51701", "0" ],
     "properties" : {
@@ -665,7 +678,8 @@
 {
     "type" : "Feature",
     "id" : 1686449,
-    "timestamp" : "2016-05-08 23:09:02+02",
+    "MyData" :
+ {    "population" : 39866    },    "timestamp" : "2016-05-08 23:09:02+02",
     "rpath" : [ "1686449", "51701", "0" ],
     "properties" : {
       "id" : 1686449,
@@ -703,7 +717,8 @@
 
 {
     "type" : "Feature",
-    "id" : 1686448,
+    "id" : 1686448,    "MyData" :
+ {    "population" : 33300    },
     "timestamp" : "2016-05-08 23:09:02+02",
     "rpath" : [ "1686448", "51701", "0" ],
     "properties" : {
@@ -745,7 +760,8 @@
 {
     "type" : "Feature",
     "id" : 1687006,
-    "timestamp" : "2016-05-08 23:09:02+02",
+    "MyData" :
+ {    "population" : 457289    },    "timestamp" : "2016-05-08 23:09:02+02",
     "rpath" : [ "1687006", "51701", "0" ],
     "properties" : {
       "id" : 1687006,
@@ -796,7 +812,8 @@
 {
     "type" : "Feature",
     "id" : 1696112,
-    "timestamp" : "2016-05-08 23:09:02+02",
+    "MyData" :
+ {    "population" : 73900    },    "timestamp" : "2016-05-08 23:09:02+02",
     "rpath" : [ "1696112", "51701", "0" ],
     "properties" : {
       "id" : 1696112,
@@ -840,7 +857,8 @@
 {
     "type" : "Feature",
     "id" : 1688583,
-    "timestamp" : "2016-05-08 23:09:02+02",
+    "MyData" :
+ {    "population" : 135779    },    "timestamp" : "2016-05-08 23:09:02+02",
     "rpath" : [ "1688583", "51701", "0" ],
     "properties" : {
       "id" : 1688583,
@@ -880,7 +898,8 @@
 
 {
     "type" : "Feature",
-    "id" : 1701133,
+    "id" : 1701133,    "MyData" :
+ {    "population" : 247400    },
     "timestamp" : "2016-05-08 23:09:02+02",
     "rpath" : [ "1701133", "51701", "0" ],
     "properties" : {
@@ -928,7 +947,8 @@
 
 {
     "type" : "Feature",
-    "id" : 1693811,
+    "id" : 1693811,    "MyData" :
+ {    "population" : 234000    },
     "timestamp" : "2016-05-08 23:09:02+02",
     "rpath" : [ "1693811", "51701", "0" ],
     "properties" : {
@@ -971,7 +991,8 @@
 
 {
     "type" : "Feature",
-    "id" : 1687730,
+    "id" : 1687730,    "MyData" :
+ {    "population" : 319800    },
     "timestamp" : "2016-05-08 23:09:02+02",
     "rpath" : [ "1687730", "51701", "0" ],
     "properties" : {
@@ -1020,8 +1041,8 @@
 
 {
     "type" : "Feature",
-    "id" : 1693971,
-    "timestamp" : "2016-05-08 23:09:02+02",
+    "id" : 1693971,    "MyData" :
+ {    "population" : 35100    },    "timestamp" : "2016-05-08 23:09:02+02",
     "rpath" : [ "1693971", "51701", "0" ],
     "properties" : {
       "id" : 1693971,
@@ -1061,7 +1082,8 @@
 
 {
     "type" : "Feature",
-    "id" : 1686699,
+    "id" : 1686699,    "MyData" :
+ {    "population" : 288800    },
     "timestamp" : "2016-05-08 23:09:02+02",
     "rpath" : [ "1686699", "51701", "0" ],
     "properties" : {
@@ -1105,7 +1127,8 @@
 
 {
     "type" : "Feature",
-    "id" : 1702421,
+    "id" : 1702421,    "MyData" :
+ {    "population" : 657700    },
     "timestamp" : "2016-05-08 23:09:02+02",
     "rpath" : [ "1702421", "51701", "0" ],
     "properties" : {
@@ -1156,7 +1179,8 @@
 
 {
     "type" : "Feature",
-    "id" : 1686447,
+    "id" : 1686447,    "MyData" :
+ {    "population" : 104538    },
     "timestamp" : "2016-05-08 23:09:02+02",
     "rpath" : [ "1686447", "51701", "0" ],
     "properties" : {
@@ -1195,7 +1219,8 @@
 
 {
     "type" : "Feature",
-    "id" : 1690227,
+    "id" : 1690227,    "MyData" :
+ {    "population" : 1273278    },
     "timestamp" : "2016-05-08 23:09:02+02",
     "rpath" : [ "1690227", "51701", "0" ],
     "properties" : {

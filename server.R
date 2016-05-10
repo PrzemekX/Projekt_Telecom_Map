@@ -43,6 +43,31 @@ shinyServer(function(input, output) {
     geojson <- readLines("SDane2.txt", warn = FALSE) %>%
       paste(collapse = "\n") %>%
       fromJSON(simplifyVector = FALSE)
+
+    # Default styles for all features
+    geojson$style = list(
+      weight = 1,
+      color = "#555555",
+      opacity = 1,
+      fillOpacity = 0.8
+    )
+    
+    # Gather population estimate from all cantons
+    population <- sapply(geojson$features, function(feat) {
+      max(1, feat$MyData$population)
+    })
+    
+    # Color by population using quantiles
+    pal <- colorQuantile("Reds", n = 8, population)  #"Greens"
+    # Add a properties$style list to each feature
+    geojson$features <- lapply(geojson$features, function(feat) {
+      feat$properties$style <- list(
+        fillColor = pal(
+          max(1, feat$MyData$population)
+        )
+      )
+      feat
+    })
     #####GeoJson - Close#####
     
     m <- leaflet() %>%
