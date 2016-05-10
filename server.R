@@ -58,7 +58,7 @@ shinyServer(function(input, output) {
     })
     
     # Color by population using quantiles
-    pal <- colorQuantile("Reds", n = 8, population)  #"Greens"
+    pal <- colorQuantile("Reds", n = 26, population)  #"Greens"
     # Add a properties$style list to each feature
     geojson$features <- lapply(geojson$features, function(feat) {
       feat$properties$style <- list(
