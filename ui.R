@@ -49,7 +49,10 @@ shinyUI(navbarPage("Dane Telecom", #id="nav",
   
   #####TabPanel####Plots#####Open#####
   tabPanel("Plots",
-    plotOutput("Plot1")
+    plotOutput("Plot1"),
+    plotOutput("PlotPy"),
+    textInput("textinput", label = h3("Choose country"), value = "SZ"),
+    numericInput("numinput", label = h3("Choose year"), value = 2015)
   )
   #####TabPanel####Plots#####Close#####
                  

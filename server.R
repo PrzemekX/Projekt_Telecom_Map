@@ -274,8 +274,10 @@ shinyServer(function(input, output) {
     
   output$Plot1 <- renderPlot({
     
-    dataFromExcel <- read.xlsx(file="Dane_Szwajcaria_Wiek3.xlsx", sheetIndex=1,header=TRUE)
+    dataFromExcel <- read.xlsx(file="Dane_Szwajcaria_Wiek.xlsx", sheetIndex=1,header=TRUE)
     df <- dataFromExcel
+    
+    options(scipen=999)
     
     # df$Date <- as.Date(as.character(df$Date), format="%Y-%m-%d")
     x <- df$Time # first column with Date
@@ -293,6 +295,56 @@ shinyServer(function(input, output) {
                                     hjust = 0.5),
             axis.title=element_text(size=8))
     plotGgplot
+    
+  })
+  
+  output$PlotPy <- renderPlot({
+    get_data <- function(country, year) {
+      c1 <- "http://www.census.gov/population/international/data/idb/region.php?N=%20Results%20&T=10&A=separate&RT=0&Y="  
+      c2 <- "&R=-1&C="
+      url <- paste0(c1, year, c2, country)
+      df <- data.frame(readHTMLTable(url))
+      cname <- colnames(df[1])
+      keep <- c(2, 4, 5)
+      df <- df[,keep]  
+      names(df) <- c("Age", "Male", "Female")
+      cols <- 2:3
+      df[,cols] <- apply(df[,cols], 2, function(x) as.numeric(as.character(gsub(",", "", x))))
+      df <- df[df$Age != 'Total', ]  
+      df$Male <- -1 * df$Male
+      df$Age <- factor(df$Age, levels = df$Age, labels = df$Age)
+      
+      df.melt <- melt(df, 
+                      value.name='Population', 
+                      variable.name = 'Gender', 
+                      id.vars='Age' )
+      
+      mylist <- list("table" = df.melt, "text" = cname, "year" = year)
+      
+      return(mylist)
+    }
+        Num <- input$numinput
+        CText <- input$textinput
+        mydata <- get_data(CText, Num)
+        country <- data.frame(mydata[1])
+        text <- as.character(mydata[2])
+        year <- as.character(mydata[3])
+        unl1 <- unlist(strsplit(text, ".", fixed = TRUE) )
+        text2 <- paste(unl1[17], year, sep = " ")
+        
+        g1 <- ggplot(country, aes(x = table.Age, y = table.Population, fill = table.Gender)) + 
+          geom_bar(data = subset(country, table.Gender == "Male"), stat = "identity", position = "identity") + 
+          geom_bar(data = subset(country, table.Gender == "Female"), stat = "identity", position = "identity") +
+          scale_y_continuous(breaks = seq(-1 * max(country$table.Population), max(country$table.Population), max(country$table.Population) / 4)) +
+          coord_flip() +
+          xlab("Age") +
+          ylab("Population") +
+          labs(fill = "Gender") +
+          ggtitle(text2) +
+          scale_fill_brewer(palette = "Set1") + 
+          theme_bw()
+        
+        g1
     
   })
 })
